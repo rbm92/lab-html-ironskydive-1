@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:700|Roboto:100,300,700");
+
+:root {
+  --blue: rgb(67, 163, 230);
+  --darkBlue: rgb(25, 33, 41);
+  --text: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-size: 10px;
+  line-height: 3.5em;
+  font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Roboto Condensed";
+}
+
+h1 {
+  font-size: 9em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 5em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 4em;
+  color: var(--white);
+  text-shadow: #020819 8px -20px 9px;
+}
+
+h3 {
+  font-size: 4.2em;
+  text-align: center;
+  line-height: 1em;
+}
+
+h4 {
+  font-size: 1.5em;
+  letter-spacing: 0.4px;
+  line-height: 1em;
+}
+
+h5 {
+  font-size: 1.2em;
+  line-height: 1em;
+}
+
+.nav-bar {
+  background-color: var(--darkBlue);
+}
+
+.nav-bar a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 2em;
+}
+
+.header {
+  height: 650px;
+  background-image: url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.quote {
+  font-size: 2.5em;
+  line-height: 0;
+}
+
+.quote p {
+  line-height: 0;
+}
+
+.dark-bg {
+  background-color: var(--darkBlue);
+  color: var(--white);
+}
+
+.text {
+  font-size: 2em;
+  font-weight: 100;
+  text-align: center;
+}
+
+.link-btn {
+  background-color: var(--blue);
+  color: var(--white);
+  font-family: "Roboto Condensed";
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.service-box {
+  font-size: 1.7em;
+  text-align: center;
+}
+
+.service-box img {
+  width: 125px;
+}
+
+#team .section-text {
+  font-size: 1.9em;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#team .member-name {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+#team img {
+  width: 250px;
+  height: 180px;
+}
+
+hr {
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 1.9em;
+}
+
+.address {
+  font-style: normal;
+  font-size: 0.8em;
+  line-height: 2;
+}
+
+.footer a {
+  color: var(--blue);
+  text-decoration: none;
+  font-size: 1.5em;
+  line-height: 2;
+}
+
+.footer ul {
+  list-style-type: none;
+}
