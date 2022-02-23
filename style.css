@@ -22,6 +22,7 @@ h3,
 h4,
 h5 {
   font-family: "Roboto Condensed";
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -60,6 +61,23 @@ h5 {
   background-color: var(--darkBlue);
 }
 
+.nav-bar ul {
+  text-align: center;
+}
+
+.nav-bar ul a:hover {
+  color: var(--blue);
+}
+
+@media (min-width: 760px) {
+  .nav-bar ul {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}
+
 .nav-bar a {
   color: var(--white);
   text-decoration: none;
@@ -69,7 +87,7 @@ h5 {
 .header {
   height: 650px;
   background-image: url("https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/ironhack-skydive-background.jpg");
-  background-position: 0 0;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -77,15 +95,30 @@ h5 {
 .quote {
   font-size: 2.5em;
   line-height: 0;
+  text-align: center;
 }
 
 .quote p {
+  font-size: 18px;
   line-height: 0;
+}
+
+.quote em {
+  font-size: 18px;
 }
 
 .dark-bg {
   background-color: var(--darkBlue);
   color: var(--white);
+}
+
+section {
+  padding: 20px;
+}
+
+#general-information p {
+  line-height: 2;
+  margin: 0 auto;
 }
 
 .text {
@@ -102,15 +135,30 @@ h5 {
   letter-spacing: 0.5px;
   text-align: center;
   text-decoration: none;
+  padding: 15px;
+}
+
+#structure div {
+  max-width: 1200px;
+  margin: 20px auto;
 }
 
 .service-box {
   font-size: 1.7em;
   text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #c3c3c3;
+  margin: 10px;
+  padding: 10px;
 }
 
 .service-box img {
   width: 125px;
+}
+
+.service-box p {
+  font-size: 16px;
+  line-height: 2;
 }
 
 #team .section-text {
@@ -119,9 +167,14 @@ h5 {
   line-height: 1.5;
 }
 
+#team article {
+  text-align: center;
+}
+
 #team .member-name {
   font-size: 1.5em;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 #team img {
@@ -130,27 +183,119 @@ h5 {
 }
 
 hr {
-  margin-bottom: 10px;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+#schedule table {
+  margin: 10px auto;
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+#schedule table th,
+td {
+  border-bottom: 1px solid;
+}
+
+#schedule table th {
+  font-weight: 700;
 }
 
 .footer {
   text-align: center;
   font-size: 1.9em;
+  padding: 10px;
 }
 
-.address {
+.footer .address {
   font-style: normal;
   font-size: 0.8em;
-  line-height: 2;
+  line-height: 1.8;
+  margin: 30px;
 }
 
 .footer a {
   color: var(--blue);
   text-decoration: none;
   font-size: 1.5em;
-  line-height: 2;
+  line-height: 1;
+  padding: 10px;
+}
+
+.footer a:hover {
+  background-color: var(--blue);
+  color: var(--white);
 }
 
 .footer ul {
   list-style-type: none;
+}
+
+@media (max-width: 760px) {
+  .header {
+    height: 400px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  .quote em {
+    font-size: 14px;
+  }
+
+  .quote p {
+    font-size: 14px;
+  }
+
+  .link-btn {
+    padding: 0;
+    margin: 10px;
+  }
+
+  #general-information article {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+}
+
+@media (min-width: 760px) {
+  #general-information div {
+    text-align: center;
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  #general-information article {
+    justify-content: space-between;
+    margin: 40px 10px;
+  }
+
+  #structure div {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  #team div {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  #schedule table th,
+  td {
+    font-size: 16px;
+  }
 }
