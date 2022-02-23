@@ -5,6 +5,7 @@
   --darkBlue: rgb(25, 33, 41);
   --text: rgb(0, 0, 0);
   --white: rgb(255, 255, 255);
+  --gray: #c3c3c3;
 }
 
 * {
@@ -96,6 +97,7 @@ h5 {
   font-size: 2.5em;
   line-height: 0;
   text-align: center;
+  color: var(--white);
 }
 
 .quote p {
@@ -147,7 +149,7 @@ section {
   font-size: 1.7em;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 1px 1px 10px #c3c3c3;
+  box-shadow: 1px 1px 10px var(--gray);
   margin: 10px;
   padding: 10px;
 }
@@ -204,6 +206,10 @@ td {
   font-weight: 700;
 }
 
+.slot {
+  margin-top: 30px;
+}
+
 .footer {
   text-align: center;
   font-size: 1.9em;
@@ -212,7 +218,7 @@ td {
 
 .footer .address {
   font-style: normal;
-  font-size: 0.8em;
+  font-size: 1.5em;
   line-height: 1.8;
   margin: 30px;
 }
@@ -233,6 +239,36 @@ td {
 .footer ul {
   list-style-type: none;
 }
+
+label {
+  display: block;
+  text-align: center;
+}
+
+input {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  padding-left: 10px;
+}
+
+input[type="submit"] {
+  margin-top: 20px;
+  background-color: var(--white);
+  border: 1px solid;
+  width: 200px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #020819;
+  color: var(--white);
+}
+
+/* Mobile Version */
 
 @media (max-width: 760px) {
   .header {
@@ -265,7 +301,13 @@ td {
     flex-direction: column;
     margin: 20px;
   }
+
+  input[type="submit"] {
+    width: 100%;
+  }
 }
+
+/* Tablet & Desktop Version */
 
 @media (min-width: 760px) {
   #general-information div {
@@ -297,5 +339,12 @@ td {
   #schedule table th,
   td {
     font-size: 16px;
+  }
+
+  .footer div {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-around;
   }
 }
