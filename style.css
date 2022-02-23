@@ -243,6 +243,7 @@ td {
 label {
   display: block;
   text-align: center;
+  font-size: 16px;
 }
 
 input {
@@ -253,6 +254,7 @@ input {
   border: 1px solid var(--gray);
   border-radius: 5px;
   padding-left: 10px;
+  font-size: 14px;
 }
 
 input[type="submit"] {
